@@ -7,9 +7,11 @@ import time
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
-# BGR
-lowerColor = (29, 86, 6)
-upperColor = (64, 255, 255)
+# HSV
+lowerColor = (5, 130, 70)
+upperColor = (20, 200, 255)
+# lowerColor = (29, 86, 6)
+# upperColor = (64, 255, 255)
 pts = deque(maxlen=64)
 
 # if a video path was not supplied, grab the reference

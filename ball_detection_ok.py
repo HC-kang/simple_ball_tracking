@@ -18,7 +18,7 @@ while True:
     redFrame = frame[:,:,2]
     blurFrame = cv.GaussianBlur(greenFrame, (0, 0), 8)
     
-    circles = cv.HoughCircles(blurFrame, cv.HOUGH_GRADIENT, 1.2, 100, param1 = 30, param2 = 60, minRadius= 5, maxRadius=200)
+    circles = cv.HoughCircles(blurFrame, cv.HOUGH_GRADIENT, 1.2, 100, param1 = 55, param2 = 60, minRadius= 5, maxRadius=200)
     
     if circles is not None:
         circles = np.uint16(np.around(circles))
